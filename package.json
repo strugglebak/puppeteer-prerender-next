@@ -1,5 +1,5 @@
 {
-  "name": "puppeteer-prerender",
+  "name": "puppeteer-prerender-next",
   "version": "0.14.0",
   "description": "Fetch the pre-rendered content, meta, links and Open Graph of a webpage, especially Single-Page Application (SPA)",
   "main": "Prerenderer.js",
@@ -11,18 +11,19 @@
     "url": "git+https://github.com/kasha-io/puppeteer-prerender.git"
   },
   "keywords": [
+    "puppeteer-prerender-next",
     "puppeteer",
     "prerender",
     "crawler",
     "seo",
     "open graph"
   ],
-  "author": "Jiang Fengming",
+  "author": "strugglebak",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kasha-io/puppeteer-prerender/issues"
+    "url": "https://github.com/strugglebak/puppeteer-prerender-next/issues"
   },
-  "homepage": "https://github.com/kasha-io/puppeteer-prerender#readme",
+  "homepage": "https://github.com/strugglebak/puppeteer-prerender-next#readme",
   "dependencies": {
     "parse-open-graph": "^0.4.0",
     "puppeteer": "^5.3.0",
