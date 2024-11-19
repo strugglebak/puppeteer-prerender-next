@@ -178,6 +178,11 @@ class Prerenderer extends EventEmitter {
       this.debug('page crashed:', url, e)
     })
 
+    // 监听控制台日志和错误输出
+    page.on('console', (msg) => {
+      this.debug('page log:', url, msg)
+    });
+
     try {
       const timerGotoURL = this.timer(`goto ${url}`)
 
