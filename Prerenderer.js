@@ -180,7 +180,7 @@ class Prerenderer extends EventEmitter {
 
     // 监听控制台日志和错误输出
     page.on('console', (msg) => {
-      this.debug('page log:', url, msg)
+      console.log('page log:', url, msg.text())
     });
 
     try {
@@ -193,11 +193,11 @@ class Prerenderer extends EventEmitter {
       await page.setRequestInterception(true)
 
       const res = await page.goto(url, {
-        waitUntil: 'networkidle0',
+        waitUntil: 'networkidle2',
         timeout
       })
 
-      this.debug('networkidle0', url)
+      this.debug('networkidle2', url)
 
       const redirects = res.request().redirectChain()
 
